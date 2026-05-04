@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>All 20 Liquid Glass Wallpaper Packs — iPhone Walls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08080a;
+    --bg-2:#0e0e12;
+    --ink:#f6f5f3;
+    --ink-2:#b9b6b0;
+    --ink-3:#6f6c66;
+    --line:rgba(255,255,255,.08);
+    --line-2:rgba(255,255,255,.14);
+    --accent:#e9e6df;
+    --gold:#d6c19a;
+    --rose:#ff6f9c;
+    --emerald:#5fd1a1;
+    --amber:#ffb157;
+    --violet:#b18bff;
+    --sky:#7cc4ff;
+    --radius:18px;
+    --radius-sm:12px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;min-width:0}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Geist",ui-sans-serif,system-ui,-apple-system,sans-serif;font-feature-settings:"ss01","cv11";-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;width:100%;max-width:100%;overflow-x:hidden}
+  body{overflow-x:hidden;position:relative}
+  img{max-width:100%;display:block}
+  button{font:inherit;color:inherit;border:0;background:0;cursor:pointer}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--gold);color:#000}
+
+  .serif{font-family:"Instrument Serif",serif;font-weight:400;letter-spacing:-.01em}
+  .mono{font-family:"Geist Mono",ui-monospace,monospace;font-feature-settings:"ss01"}
+
+  /* === Layout === */
+  .page{max-width:100%;margin:0 auto;padding:0 16px;padding-bottom:140px;overflow-x:clip}
+  @media(min-width:900px){.page{max-width:1240px;padding:0 32px;padding-bottom:80px}}
+
+  /* === Top promo bar === */
+  .promo{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,#000,#1a1216 50%,#000);border-bottom:1px solid var(--line);overflow:hidden;width:100%;max-width:100%}
+  .promo-track{display:flex;align-items:center;width:max-content;padding:9px 0;animation:slide 38s linear infinite;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);will-change:transform}
+  .promo-track b{color:var(--gold);font-weight:500}
+  .promo-track span{display:inline-flex;align-items:center;gap:10px;padding:0 28px;white-space:nowrap;flex:0 0 auto}
+  .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);display:inline-block;flex-shrink:0}
+  @keyframes slide{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+  @media(prefers-reduced-motion:reduce){.promo-track{animation:none}}
+
+  /* === Nav === */
+  nav.top{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:8px}
+  .brand{display:flex;align-items:center;gap:8px;font-family:"Instrument Serif",serif;font-size:20px;letter-spacing:.01em;min-width:0;flex-shrink:1;white-space:nowrap}
+  .brand .mark{width:20px;height:20px;border-radius:50%;background:conic-gradient(from 200deg,#ffd1e3,#c9b6ff,#9be4ff,#ffe7b8,#ffd1e3);box-shadow:inset 0 0 0 1px rgba(255,255,255,.4),0 0 16px rgba(255,200,230,.35);flex-shrink:0}
+  .nav-links{display:none;gap:28px;font-size:13px;color:var(--ink-2)}
+  .nav-links a:hover{color:var(--ink)}
+  .cart{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2);border:1px solid var(--line);padding:7px 11px;border-radius:99px;flex-shrink:0;white-space:nowrap}
+  @media(min-width:900px){.brand{font-size:22px}.brand .mark{width:22px;height:22px}.nav-links{display:flex}.cart{font-size:13px;padding:8px 12px}nav.top{padding:18px 0}}
+
+  /* === HERO === */
+  .hero{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-top:6px}
+  @media(min-width:900px){.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;padding-top:24px;align-items:start}}
+
+  /* Carousel */
+  .gallery{position:relative;width:100%;min-width:0}
+  .gframe{position:relative;width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#0a0a0d;aspect-ratio:3/4}
+  @media(min-width:900px){.gframe{aspect-ratio:4/5}}
+  .gtrack{display:flex;width:100%;height:100%;transition:transform .55s cubic-bezier(.7,0,.15,1)}
+  .gslide{flex:0 0 100%;width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;background:#0a0a0d;overflow:hidden}
+  .gslide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+  .gslide.video-style{background:#000}
+  .gtag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:7px 11px;border-radius:99px;display:flex;align-items:center;gap:8px}
+  .gtag .pulse{width:6px;height:6px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 0 rgba(255,111,156,.6);animation:pulse 1.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,111,156,.7)}70%{box-shadow:0 0 0 10px rgba(255,111,156,0)}100%{box-shadow:0 0 0 0 rgba(255,111,156,0)}}
+  .gnav{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:#fff;z-index:2;transition:background .2s}
+  .gnav:hover{background:rgba(0,0,0,.75)}
+  .gnav.prev{left:10px}.gnav.next{right:10px}
+  @media(min-width:900px){.gnav{width:42px;height:42px}.gnav.prev{left:12px}.gnav.next{right:12px}}
+  .gcount{position:absolute;bottom:14px;right:14px;font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.1em;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:99px}
+  .thumbs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .thumbs::-webkit-scrollbar{display:none}
+  .thumb{flex:0 0 64px;width:64px;height:64px;border-radius:10px;overflow:hidden;border:1px solid var(--line);opacity:.55;transition:all .25s;cursor:pointer;position:relative}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb.active{opacity:1;border-color:#fff;transform:scale(1.04)}
+  @media(min-width:900px){.thumb{flex:0 0 78px;width:78px;height:78px}}
+
+  /* Right column */
+  .buybox{display:flex;flex-direction:column;gap:18px}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;font-size:11px;color:var(--ink-2);letter-spacing:.14em;text-transform:uppercase}
+  .badges span{border:1px solid var(--line);padding:5px 9px;border-radius:99px;display:inline-flex;align-items:center;gap:6px}
+  .badges .live{color:#fff}
+  .badges .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
+  h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(34px,6.4vw,56px);line-height:1.02;letter-spacing:-.02em;margin:0}
+  h1 em{font-style:italic;color:var(--gold)}
+  .sub{color:var(--ink-2);font-size:15px;line-height:1.55;margin:0;max-width:46ch}
+  .stars{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
+  .stars .s{color:var(--gold);letter-spacing:1px;font-size:14px}
+  .stars u{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-2)}
+
+  /* Price block */
+  .price-row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .price-now{font-family:"Instrument Serif",serif;font-size:54px;line-height:1;letter-spacing:-.02em}
+  .price-was{font-size:18px;color:var(--ink-3);text-decoration:line-through}
+  .price-off{background:var(--gold);color:#000;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px;border-radius:6px}
+  .price-meta{font-size:12px;color:var(--ink-2);letter-spacing:.06em;display:flex;gap:14px;flex-wrap:wrap;margin-top:-6px}
+  .price-meta b{color:var(--ink);font-weight:500}
+
+  /* Code banner */
+  .code{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border:1px dashed var(--line-2);border-radius:var(--radius-sm);background:linear-gradient(90deg,rgba(214,193,154,.08),rgba(214,193,154,.02));font-size:13px}
+  .code .ck{font-family:"Geist Mono",monospace;letter-spacing:.18em;color:var(--gold);font-weight:500}
+  .code button{font-size:12px;color:var(--ink-2);border:1px solid var(--line);padding:6px 10px;border-radius:8px;letter-spacing:.06em}
+  .code button.copied{background:var(--emerald);color:#000;border-color:var(--emerald)}
+
+  /* Stock urgency */
+  .stock{display:flex;flex-direction:column;gap:8px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);background:rgba(255,255,255,.015)}
+  .stock-head{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.08em;color:var(--ink-2)}
+  .stock-head b{color:#fff;font-weight:500}
+  .stock-bar{height:5px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+  .stock-bar i{display:block;height:100%;width:18%;background:linear-gradient(90deg,#ff5471,#ff9c5a);border-radius:99px;animation:wiggle 2.4s ease-in-out infinite}
+  @keyframes wiggle{0%,100%{width:18%}50%{width:22%}}
+  .stock .timer{font-family:"Geist Mono",monospace;font-size:13px;color:#fff;display:flex;gap:6px;align-items:center;justify-content:space-between}
+  .timer b{display:inline-block;min-width:30px;padding:5px 7px;background:#0a0a0d;border:1px solid var(--line);border-radius:6px;text-align:center;font-weight:500}
+
+  /* Bundle / order bump */
+  .bundle{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .bundle-row{display:grid;grid-template-columns:auto 64px 1fr auto;gap:12px;align-items:center;padding:14px;border-bottom:1px solid var(--line);transition:background .2s}
+  .bundle-row:last-child{border-bottom:0}
+  .bundle-row.on{background:linear-gradient(90deg,rgba(214,193,154,.07),transparent)}
+  .check{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--line-2);display:flex;align-items:center;justify-content:center;transition:all .2s}
+  .bundle-row.on .check{background:var(--ink);border-color:var(--ink);color:#000}
+  .bundle-thumb{width:64px;height:64px;border-radius:10px;overflow:hidden;background:#111;border:1px solid var(--line)}
+  .bundle-thumb img{width:100%;height:100%;object-fit:cover}
+  .bundle-info{min-width:0}
+  .bundle-info .t{font-size:14px;font-weight:500;line-height:1.3}
+  .bundle-info .d{font-size:12px;color:var(--ink-2);margin-top:2px;line-height:1.4}
+  .bundle-price{text-align:right;font-size:13px;line-height:1.3}
+  .bundle-price b{display:block;font-weight:500}
+  .bundle-price s{color:var(--ink-3);font-size:11px}
+  .bundle-price .save{display:inline-block;margin-top:3px;font-family:"Geist Mono",monospace;font-size:10px;color:var(--emerald);letter-spacing:.06em}
+
+  .bundle-foot{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#000;border-top:1px solid var(--line)}
+  .bundle-foot .lbl{font-size:12px;color:var(--ink-2);letter-spacing:.08em;text-transform:uppercase}
+  .bundle-foot .tot{font-family:"Instrument Serif",serif;font-size:32px;line-height:1}
+  .bundle-foot .tot s{color:var(--ink-3);font-size:14px;margin-right:8px;font-family:inherit}
+
+  /* CTA */
+  .cta{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px;border-radius:14px;background:linear-gradient(180deg,#fafafa,#dcd6cb);color:#0a0a0d;font-weight:600;font-size:16px;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;transition:transform .15s}
+  .cta:hover{transform:translateY(-1px)}
+  .cta:active{transform:translateY(1px)}
+  .cta::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.7),transparent 70%);transform:translateX(-100%);animation:shine 3.5s ease-in-out infinite}
+  @keyframes shine{0%,40%{transform:translateX(-100%)}60%{transform:translateX(100%)}100%{transform:translateX(100%)}}
+  .cta-arrow{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px}
+
+  .pay-row{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:4px;color:var(--ink-3);font-size:11px;letter-spacing:.1em}
+  .pay-icons{display:flex;gap:8px;align-items:center;opacity:.7}
+  .pay-icons span{height:18px;padding:0 8px;border:1px solid var(--line);border-radius:4px;display:inline-flex;align-items:center;font-size:9px;letter-spacing:.1em;color:var(--ink-2);font-weight:600}
+
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:6px}
+  .trust div{font-size:10.5px;color:var(--ink-2);letter-spacing:.06em;text-align:center;line-height:1.3;text-transform:uppercase;border:1px solid var(--line);border-radius:10px;padding:10px 4px}
+  .trust div b{display:block;color:#fff;font-weight:500;letter-spacing:0;font-size:11px;margin-top:3px;text-transform:none;font-family:"Instrument Serif",serif;font-size:14px}
+  @media(min-width:520px){.trust{grid-template-columns:repeat(4,1fr)}}
+
+  /* === Section === */
+  section{padding:80px 0 0}
+  .eyebrow{font-size:11px;color:var(--ink-2);letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--gold)}
+  h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.04;letter-spacing:-.02em;margin:0 0 14px}
+  h2 em{font-style:italic;color:var(--gold)}
+  .lede{color:var(--ink-2);font-size:16px;line-height:1.55;max-width:58ch;margin:0}
+
+  /* Marquee gallery */
+  .marquee{margin:32px -18px 0;overflow:hidden;mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  @media(min-width:900px){.marquee{margin:32px -32px 0}}
+  .marquee-track{display:flex;gap:14px;animation:scroll 60s linear infinite;width:max-content}
+  .marquee-track img{height:340px;width:auto;border-radius:14px;border:1px solid var(--line)}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* Stats strip */
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:36px}
+  @media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+  .stat{padding:24px 16px;background:var(--bg);text-align:center}
+  .stat .n{font-family:"Instrument Serif",serif;font-size:42px;line-height:1;letter-spacing:-.02em}
+  .stat .n em{color:var(--gold);font-style:italic}
+  .stat .l{font-size:11px;color:var(--ink-2);letter-spacing:.16em;text-transform:uppercase;margin-top:6px}
+
+  /* Pack picker */
+  .picker{margin-top:36px}
+  .picker-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:14px;scrollbar-width:none}
+  .picker-tabs::-webkit-scrollbar{display:none}
+  .ptab{flex:0 0 auto;padding:10px 16px;border-radius:99px;border:1px solid var(--line);font-size:12px;letter-spacing:.08em;color:var(--ink-2);text-transform:uppercase;white-space:nowrap;transition:all .25s}
+  .ptab.on{background:#fff;color:#000;border-color:#fff}
+  .ptab:hover:not(.on){border-color:var(--line-2);color:#fff}
+  .pack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+  @media(min-width:760px){.pack-grid{grid-template-columns:repeat(4,1fr);gap:14px}}
+  .pcard{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:transform .35s ease,border-color .25s}
+  .pcard img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+  .pcard:hover{transform:translateY(-3px);border-color:var(--line-2)}
+  .pcard:hover img{transform:scale(1.06)}
+  .pcard .lbl{position:absolute;bottom:10px;left:10px;font-family:"Instrument Serif",serif;font-size:18px;letter-spacing:-.01em;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+  .pcard .num{position:absolute;top:10px;right:10px;font-family:"Geist Mono",monospace;font-size:10px;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);padding:4px 8px;border-radius:99px}
+
+  /* === Reviews === */
+  .reviews{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+  @media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+  .rev{padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,.025),transparent)}
+  .rev .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+  .rev .who{display:flex;align-items:center;gap:10px;font-size:13px}
+  .rev .av{width:32px;height:32px;border-radius:50%;background:#222;display:flex;align-items:center;justify-content:center;font-family:"Instrument Serif",serif;font-size:14px;color:#fff;border:1px solid var(--line-2)}
+  .rev .av.r1{background:linear-gradient(135deg,#ff90b3,#ffd1e3)}
+  .rev .av.r2{background:linear-gradient(135deg,#a3c5ff,#d6e9ff)}
+  .rev .av.r3{background:linear-gradient(135deg,#d6c19a,#fff1d6)}
+  .rev .av.r4{background:linear-gradient(135deg,#a8e8c8,#daffea)}
+  .rev .av.r5{background:linear-gradient(135deg,#c9b6ff,#e8dcff)}
+  .rev .av.r6{background:linear-gradient(135deg,#ffb692,#ffe1cc)}
+  .rev .name{font-weight:500;font-size:13px}
+  .rev .name span{color:var(--ink-3);font-size:11px;display:block;font-weight:400;margin-top:1px}
+  .rev .stars-inline{color:var(--gold);font-size:12px;letter-spacing:1px}
+  .rev p{margin:0;font-size:14px;line-height:1.55;color:var(--ink-2)}
+  .rev p b{color:#fff;font-weight:500}
+  .rev .v{font-size:10.5px;color:var(--emerald);letter-spacing:.1em;text-transform:uppercase;margin-top:10px;display:inline-flex;align-items:center;gap:6px}
+  .rev .v::before{content:"✓"}
+
+  /* === HIW === */
+  .hiw{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px;counter-reset:s}
+  @media(min-width:760px){.hiw{grid-template-columns:repeat(3,1fr)}}
+  .hstep{padding:24px;border:1px solid var(--line);border-radius:var(--radius);position:relative;counter-increment:s}
+  .hstep::before{content:counter(s,decimal-leading-zero);font-family:"Geist Mono",monospace;font-size:11px;color:var(--gold);letter-spacing:.16em;display:block;margin-bottom:18px}
+  .hstep h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:24px;letter-spacing:-.01em;margin:0 0 8px}
+  .hstep p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.55}
+
+  /* === Compare === */
+  .compare{margin-top:36px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .compare-head{display:grid;grid-template-columns:1.3fr 1fr 1fr;background:#0a0a0d;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+  .compare-head>div{padding:14px 10px;border-right:1px solid var(--line);text-align:center}
+  .compare-head>div:first-child{text-align:left}
+  .compare-head>div:last-child{border-right:0;color:var(--gold)}
+  .compare-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;border-top:1px solid var(--line);font-size:12.5px}
+  .compare-row>div{padding:12px 10px;border-right:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-2);text-align:center}
+  .compare-row>div:first-child{justify-content:flex-start;color:#fff;font-weight:500;text-align:left}
+  .compare-row>div:last-child{border-right:0;background:rgba(214,193,154,.04);color:#fff}
+  @media(min-width:760px){
+    .compare-head{font-size:11px}
+    .compare-head>div{padding:16px 14px}
+    .compare-row{font-size:13px}
+    .compare-row>div{padding:14px}
+  }
+  .x{color:var(--ink-3)}
+  .ok{color:var(--emerald)}
+
+  /* FAQ */
+  details.faq{border-bottom:1px solid var(--line);padding:18px 0}
+  details.faq[open] summary{color:#fff}
+  details.faq summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;font-size:16px;color:var(--ink);font-weight:500;padding-right:8px}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{content:"+";font-family:"Geist Mono",monospace;color:var(--gold);font-size:18px;transition:transform .25s}
+  details.faq[open] summary::after{content:"–"}
+  details.faq p{color:var(--ink-2);font-size:14.5px;line-height:1.6;margin:12px 0 0;max-width:62ch}
+
+  /* Sticky mobile bar */
+  .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(8,8,10,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:10px;transform:translateY(110%);transition:transform .35s ease}
+  .sticky-bar.show{transform:translateY(0)}
+  .sticky-bar .sp{flex:0 0 auto;line-height:1.1;min-width:0}
+  .sticky-bar .sp b{font-family:"Instrument Serif",serif;font-size:22px;display:block;color:#fff}
+  .sticky-bar .sp s{font-size:11px;color:var(--ink-3);white-space:nowrap}
+  .sticky-bar .scta{flex:1;min-width:0;padding:13px 14px;border-radius:11px;background:linear-gradient(180deg,#fafafa,#dcd6cb);color:#000;font-weight:600;font-size:13px;letter-spacing:.05em;text-transform:uppercase;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  @media(min-width:900px){.sticky-bar{display:none}}
+
+  /* Footer */
+  footer{margin-top:80px;padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--ink-3);font-size:12px;letter-spacing:.06em}
+  footer .row{display:flex;justify-content:center;gap:18px;margin-bottom:14px;flex-wrap:wrap}
+  footer .row a:hover{color:#fff}
+
+  /* Live notification */
+  .liveorder{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom));left:10px;z-index:40;background:rgba(14,14,18,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;padding:9px 30px 9px 12px;display:flex;align-items:center;gap:10px;max-width:calc(100vw - 20px);width:max-content;font-size:12.5px;color:var(--ink);box-shadow:0 18px 60px rgba(0,0,0,.5);transform:translateX(-130%);transition:transform .45s cubic-bezier(.7,0,.15,1)}
+  @media(min-width:900px){.liveorder{bottom:24px;max-width:300px}}
+  .liveorder.show{transform:translateX(0)}
+  .liveorder .av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#d6c19a,#a08858);font-family:"Instrument Serif",serif;display:flex;align-items:center;justify-content:center;font-size:14px;color:#000;flex-shrink:0}
+  .liveorder b{font-weight:500;color:#fff}
+  .liveorder span{display:block;font-size:11px;color:var(--ink-2);margin-top:1px}
+  .liveorder .x{position:absolute;top:6px;right:8px;font-size:14px;color:var(--ink-3);cursor:pointer}
+  @media(min-width:900px){.liveorder{bottom:24px}}
+
+  /* Glow card behind hero on desktop */
+  .hero::before{content:"";position:absolute;inset:auto;display:none}
+
+  /* Small util */
+  .hide-mobile{display:none}
+  @media(min-width:900px){.hide-mobile{display:initial}.hide-desktop{display:none}}
+</style>
+</head>
+<body>
+
+<!-- Promo -->
+<div class="promo">
+  <div class="promo-track" aria-hidden="true">
+    <span><i class="dot"></i> use code <b>GET20</b> for 20% off — May 1–7 only</span>
+    <span><i class="dot"></i> Instant download</span>
+    <span><i class="dot"></i> 290+ packs sold this week</span>
+    <span><i class="dot"></i> works on iPhone &amp; Android</span>
+    <span><i class="dot"></i> 4K resolution</span>
+    <span><i class="dot"></i> use code <b>GET20</b> for 20% off — May 1–7 only</span>
+    <span><i class="dot"></i> Instant download</span>
+    <span><i class="dot"></i> 290+ packs sold this week</span>
+    <span><i class="dot"></i> works on iPhone &amp; Android</span>
+    <span><i class="dot"></i> 4K resolution</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <nav class="top">
+    <div class="brand"><span class="mark"></span> iPhone Walls</div>
+    <div class="nav-links">
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="cart">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18l-2 12H5L3 6Z"/><path d="M8 6V4a4 4 0 0 1 8 0v2"/></svg>
+      Cart · 1
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:0">
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gframe">
+        <div class="gtag"><span class="pulse"></span> Live preview · 4K</div>
+        <div class="gtrack" id="gtrack">
+          <div class="gslide"><img src="assets/IMG_5010.webp" alt="Magenta Flow wallpaper"></div>
+          <div class="gslide"><img src="assets/pack-rose-1.jpg" alt=""></div>
+          <div class="gslide"><img src="assets/pack-iris-1.jpg" alt=""></div>
+          <div class="gslide"><img src="assets/pack-gem-blue.jpg" alt=""></div>
+          <div class="gslide"><img src="assets/pack-iris-3.jpg" alt=""></div>
+          <div class="gslide"><img src="assets/pack-gem-pink.jpg" alt=""></div>
+          <div class="gslide"><img src="assets/pack-gem-green.jpg" alt=""></div>
+        </div>
+        <button class="gnav prev" aria-label="Previous">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="gnav next" aria-label="Next">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+        <div class="gcount" id="gcount">01 / 07</div>
+      </div>
+      <div class="thumbs" id="thumbs">
+        <button class="thumb active" data-i="0"><img src="assets/IMG_5010.webp" alt=""></button>
+        <button class="thumb" data-i="1"><img src="assets/pack-rose-1.jpg" alt=""></button>
+        <button class="thumb" data-i="2"><img src="assets/pack-iris-1.jpg" alt=""></button>
+        <button class="thumb" data-i="3"><img src="assets/pack-gem-blue.jpg" alt=""></button>
+        <button class="thumb" data-i="4"><img src="assets/pack-iris-3.jpg" alt=""></button>
+        <button class="thumb" data-i="5"><img src="assets/pack-gem-pink.jpg" alt=""></button>
+        <button class="thumb" data-i="6"><img src="assets/pack-gem-green.jpg" alt=""></button>
+      </div>
+    </div>
+
+    <!-- Buybox -->
+    <div class="buybox">
+      <div class="badges">
+        <span class="live">Live · 38 viewing</span>
+        <span>★ 4.9 / 5 · 2,140 reviews</span>
+        <span>Best seller</span>
+      </div>
+
+      <h1>All 20 Liquid Glass<br><em>Wallpaper Packs</em></h1>
+      <p class="sub">A premium glass UI experience for iPhone &amp; Android. 18 curated packs + 2 unreleased drops, 100+ wallpapers in 4K. Quiet luxury for your lock screen.</p>
+
+      <div class="stars">
+        <span class="s">★★★★★</span>
+        <u>Read 2,140 verified reviews</u>
+      </div>
+
+      <div class="price-row">
+        <span class="price-now">$9.99</span>
+        <span class="price-was">$29.99</span>
+        <span class="price-off">Save 67%</span>
+      </div>
+      <div class="price-meta">
+        <span><b>290</b> sold this week</span>
+        <span>· Instant digital download</span>
+        <span>· Lifetime updates</span>
+      </div>
+
+      <div class="code">
+        <div>Extra <b>20% off</b> with code <span class="ck" id="codeval">GET20</span></div>
+        <button id="copybtn">Copy</button>
+      </div>
+
+      <!-- Stock urgency -->
+      <div class="stock">
+        <div class="stock-head"><span>Limited launch — only <b>3 bundles left</b> at this price</span><b>82% claimed</b></div>
+        <div class="stock-bar"><i style="width:82%"></i></div>
+        <div class="timer">
+          <span style="color:var(--ink-2);font-family:Geist,sans-serif;font-size:12px;letter-spacing:.08em">Sale ends in</span>
+          <div style="display:flex;gap:6px">
+            <b id="td">02</b><b id="th">14</b><b id="tm">37</b><b id="ts">11</b>
+          </div>
+        </div>
+      </div>
+
+      <!-- What's included summary -->
+      <div class="bundle" id="bundle">
+        <div class="bundle-row on" data-id="main" data-price="9.99">
+          <div class="check">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <div class="bundle-thumb"><img src="assets/IMG_5010.webp" alt=""></div>
+          <div class="bundle-info">
+            <div class="t">All 20 Liquid Glass Wallpaper Packs</div>
+            <div class="d">100+ wallpapers · 4K · iPhone &amp; Android</div>
+          </div>
+          <div class="bundle-price">
+            <b>$9.99</b><s>$29.99</s>
+            <div class="save">−67%</div>
+          </div>
+        </div>
+        <div class="bundle-foot">
+          <div>
+            <div class="lbl">Total today</div>
+            <div class="tot"><s id="totalWas">$29.99</s><span id="totalNow">$9.99</span></div>
+          </div>
+          <div style="text-align:right;font-size:11px;color:var(--emerald);letter-spacing:.1em" id="savings">YOU SAVE $20.00</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a class="cta" id="cta" href="https://technouniverse.bio/shop/b16cff83-4ebc-430f-a294-00509e28c36b" target="_blank" rel="noopener">
+        Get the bundle — $9.99
+        <span class="cta-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <div class="pay-row">
+        <span>Secure checkout</span>
+        <div class="pay-icons">
+          <span>VISA</span><span>MC</span><span>AMEX</span><span>APPLE</span><span>PAYPAL</span>
+        </div>
+      </div>
+
+      <div class="trust">
+        <div>Instant<b>Download</b></div>
+        <div>4K<b>Resolution</b></div>
+        <div>iPhone +<b>Android</b></div>
+        <div>Lifetime<b>Updates</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The vault -->
+  <section id="gallery">
+    <div class="eyebrow">The Vault · 100+ wallpapers</div>
+    <h2>Glass, frozen <em>in motion.</em></h2>
+    <p class="lede">Every pack is hand-crafted around a different material study — from molten chrome to faceted gems. Browse a few, then unlock the full collection.</p>
+
+    <div class="picker">
+      <div class="picker-tabs" id="ptabs">
+        <button class="ptab on" data-cat="all">All Packs</button>
+        <button class="ptab" data-cat="rose">Rose Liquid</button>
+        <button class="ptab" data-cat="iris">Iridescent</button>
+        <button class="ptab" data-cat="gem">Gemstone</button>
+        <button class="ptab" data-cat="pink">Pink Wave</button>
+      </div>
+      <div class="pack-grid" id="pgrid">
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-1.jpg" alt=""><div class="num">01</div><div class="lbl">Rose Quartz</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-1.jpg" alt=""><div class="num">02</div><div class="lbl">Pearl Drop</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-blue.jpg" alt=""><div class="num">03</div><div class="lbl">Sapphire Cut</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-1.jpg" alt=""><div class="num">04</div><div class="lbl">Magenta Flow</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-3.jpg" alt=""><div class="num">05</div><div class="lbl">Aurora</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-green.jpg" alt=""><div class="num">06</div><div class="lbl">Emerald Cut</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-3.jpg" alt=""><div class="num">07</div><div class="lbl">Onyx Liquid</div></div>
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-2.jpg" alt=""><div class="num">08</div><div class="lbl">Velvet Rose</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-2.jpg" alt=""><div class="num">09</div><div class="lbl">Mother of Pearl</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-purple.jpg" alt=""><div class="num">10</div><div class="lbl">Amethyst</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-5.jpg" alt=""><div class="num">11</div><div class="lbl">Mirror Wave</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-pink.jpg" alt=""><div class="num">12</div><div class="lbl">Pink Diamond</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-7.jpg" alt=""><div class="num">13</div><div class="lbl">Liquid Mercury</div></div>
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-3.jpg" alt=""><div class="num">14</div><div class="lbl">Ruby Mist</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-8.jpg" alt=""><div class="num">15</div><div class="lbl">Obsidian Glow</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-2.jpg" alt=""><div class="num">16</div><div class="lbl">Magenta Storm</div></div>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats">
+      <div class="stat"><div class="n">20</div><div class="l">Packs included</div></div>
+      <div class="stat"><div class="n">100<em>+</em></div><div class="l">Wallpapers</div></div>
+      <div class="stat"><div class="n">4K</div><div class="l">Resolution · 9:16</div></div>
+      <div class="stat"><div class="n">$70<em>+</em></div><div class="l">Total value</div></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <section style="padding-top:60px">
+    <div class="eyebrow">In the wild</div>
+    <h2>Looks <em>insane</em> on every device.</h2>
+    <div class="marquee">
+      <div class="marquee-track">
+        <img src="assets/pack-rose-1.jpg" alt="">
+        <img src="assets/pack-iris-1.jpg" alt="">
+        <img src="assets/IMG_5010.webp" alt="">
+        <img src="assets/pack-gem-blue.jpg" alt="">
+        <img src="assets/pack-iris-3.jpg" alt="">
+        <img src="assets/pack-gem-pink.jpg" alt="">
+        <img src="assets/pack-pink-5.jpg" alt="">
+        <img src="assets/pack-rose-2.jpg" alt="">
+        <img src="assets/pack-gem-green.jpg" alt="">
+        <img src="assets/pack-pink-7.jpg" alt="">
+        <!-- duplicated for loop -->
+        <img src="assets/pack-rose-1.jpg" alt="">
+        <img src="assets/pack-iris-1.jpg" alt="">
+        <img src="assets/IMG_5010.webp" alt="">
+        <img src="assets/pack-gem-blue.jpg" alt="">
+        <img src="assets/pack-iris-3.jpg" alt="">
+        <img src="assets/pack-gem-pink.jpg" alt="">
+        <img src="assets/pack-pink-5.jpg" alt="">
+        <img src="assets/pack-rose-2.jpg" alt="">
+        <img src="assets/pack-gem-green.jpg" alt="">
+        <img src="assets/pack-pink-7.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="eyebrow">How it works</div>
+    <h2>From cart to <em>lock screen</em> in 60 seconds.</h2>
+    <div class="hiw">
+      <div class="hstep">
+        <h3>Buy &amp; download</h3>
+        <p>Instant download right after checkout. A .zip with every pack lands on your phone or laptop. No accounts, no waitlist.</p>
+      </div>
+      <div class="hstep">
+        <h3>Save to camera roll</h3>
+        <p>Tap a wallpaper to preview, hold to save. Works perfectly on iPhone, iPad and Android. AirDrop friendly.</p>
+      </div>
+      <div class="hstep">
+        <h3>Set as wallpaper</h3>
+        <p>Apply to lock screen, home screen or both. Optimized for Dynamic Island, Always-On Display and Android widgets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="eyebrow">★★★★★ · 4.9 from 2,140 reviews</div>
+    <h2>People keep <em>switching back</em>.</h2>
+    <p class="lede">Real customers, real lock screens. Join 18,000+ buyers who upgraded their daily aesthetic.</p>
+
+    <div class="reviews">
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r1">M</div><div class="name">Maya R.<span>iPhone 15 Pro</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"Honestly looks like <b>iOS 19 leaked early</b>. The rose pack is unreal — every notification looks like it's floating in glass."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r2">J</div><div class="name">Jordan K.<span>Pixel 8 Pro</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"Bought this expecting <b>maybe 5 good ones</b>. Got 100+ that all slap. Best $9 I've spent on my phone in years."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r3">A</div><div class="name">Aisha T.<span>iPhone 14</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"Three coworkers asked me where I got my wallpaper this week. <b>Worth it for the compliments alone</b>."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r4">D</div><div class="name">Diego M.<span>iPhone 15</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"The depth on the gem pack is wild. Looks like the screen has actual <b>thickness</b> to it. Such a clean upgrade."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r5">L</div><div class="name">Lena P.<span>iPhone 13 Mini</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"I was skeptical at $9.99 for so many. Downloaded in 10 seconds, set up in another 30. <b>Phone feels brand new</b>."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+      <div class="rev">
+        <div class="top">
+          <div class="who"><div class="av r6">S</div><div class="name">Sam V.<span>Galaxy S24</span></div></div>
+          <div class="stars-inline">★★★★★</div>
+        </div>
+        <p>"Works perfectly on Android — fits the punch hole, AOD looks sick. <b>Don't sleep on the iridescent pack</b>."</p>
+        <div class="v">Verified buyer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare -->
+  <section>
+    <div class="eyebrow">Why this pack</div>
+    <h2>The only wallpaper bundle <em>that ages well.</em></h2>
+    <div class="compare">
+      <div class="compare-head">
+        <div>What you get</div>
+        <div>Free wallpaper apps</div>
+        <div>This bundle</div>
+      </div>
+      <div class="compare-row">
+        <div>True 4K resolution</div><div class="x">Compressed</div><div class="ok">✓ Native 4K</div>
+      </div>
+      <div class="compare-row">
+        <div>Liquid glass aesthetic</div><div class="x">Generic stock</div><div class="ok">✓ 20 unique packs</div>
+      </div>
+      <div class="compare-row">
+        <div>Ads &amp; pop-ups</div><div class="x">Constant</div><div class="ok">✓ Zero, ever</div>
+      </div>
+      <div class="compare-row">
+        <div>iPhone + Android</div><div class="x">One platform</div><div class="ok">✓ Both, 9:16</div>
+      </div>
+      <div class="compare-row">
+        <div>Lifetime updates</div><div class="x">No</div><div class="ok">✓ Free, forever</div>
+      </div>
+      <div class="compare-row">
+        <div>One-time price</div><div class="x">$5–10/mo</div><div class="ok">✓ $9.99 once</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="eyebrow">FAQ</div>
+    <h2>Everything you need <em>to know.</em></h2>
+    <div style="max-width:780px;margin-top:24px">
+      <details class="faq" open>
+        <summary>How do I receive my wallpapers?</summary>
+        <p>The moment your payment goes through, you'll get an instant download link both on-screen and via email. No accounts, no waiting — just a .zip with all 20 packs ready to extract on iPhone, iPad, Android or desktop.</p>
+      </details>
+      <details class="faq">
+        <summary>Will they work on my phone?</summary>
+        <p>Yes. Every wallpaper is exported in 9:16 at 4K, which fits every iPhone (12 through 16 Pro Max), iPad, and Android device including Pixel and Galaxy. We've optimized for Dynamic Island, notches and punch-hole cameras.</p>
+      </details>
+      <details class="faq">
+        <summary>What's the difference between this and the 19,000 mega vault?</summary>
+        <p>This bundle is a curated 20-pack of our best liquid glass and gemstone designs (100+ wallpapers). The mega vault is our entire library — every aesthetic, every category. The order bump above lets you add it for $4.29 instead of $5.29 — a one-time offer at checkout.</p>
+      </details>
+      <details class="faq">
+        <summary>Is the GET20 code stackable with the bundle?</summary>
+        <p>Yes — apply <span class="mono" style="color:var(--gold)">GET20</span> at checkout to take an additional 20% off the already-discounted bundle price. Valid May 1–7 only.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I share these with friends?</summary>
+        <p>The wallpapers are licensed for personal use on your devices. Please don't redistribute the files — instead, send your friend this page so they can grab their own copy (and get the same launch pricing).</p>
+      </details>
+      <details class="faq">
+        <summary>Refund policy?</summary>
+        <p>Because these are instant digital downloads, all sales are final. That said — if anything is wrong with your files (corrupt zip, missing pack, etc) email us and we'll fix it the same day.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section style="padding-top:80px">
+    <div style="border:1px solid var(--line);border-radius:24px;padding:48px 24px;text-align:center;background:radial-gradient(ellipse at top,rgba(214,193,154,.12),transparent 70%)">
+      <div class="eyebrow" style="justify-content:center">★★★★★ · trusted by 18,000+</div>
+      <h2 style="margin:0 auto;max-width:18ch">Make your phone feel <em>expensive</em>.</h2>
+      <p class="lede" style="margin:14px auto 28px">All 20 packs. 100+ wallpapers. One time. Instant download.</p>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px">
+        <div style="display:flex;align-items:baseline;gap:12px;justify-content:center">
+          <span class="price-now">$9.99</span>
+          <span class="price-was">$29.99</span>
+          <span class="price-off">67% OFF</span>
+        </div>
+        <a class="cta" style="max-width:380px;width:100%" href="https://technouniverse.bio/shop/b16cff83-4ebc-430f-a294-00509e28c36b" target="_blank" rel="noopener">
+          Get the bundle now
+          <span class="cta-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="pay-row" style="justify-content:center">
+          <span>SSL secure · Apple Pay · 100% safe checkout</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <a href="#">Contact</a>
+      <a href="#">License</a>
+      <a href="#">Refund policy</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    <div>© 2026 iPhone Walls Studio · Crafted in glass.</div>
+  </footer>
+</div>
+
+<!-- Sticky bottom bar (mobile) -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sp">
+    <b>$9.99</b>
+    <s>$29.99 · 67% off</s>
+  </div>
+  <a class="scta" href="https://technouniverse.bio/shop/b16cff83-4ebc-430f-a294-00509e28c36b" target="_blank" rel="noopener">
+    Buy now
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<!-- Live order toast -->
+<div class="liveorder" id="liveorder">
+  <div class="av" id="liveav">A</div>
+  <div>
+    <b id="liveName">Anna in Berlin</b>
+    <span id="liveMsg">just bought All 20 Liquid Glass Packs · 2 min ago</span>
+  </div>
+</div>
+
+<script>
+/* ============ Carousel ============ */
+(function(){
+  const track = document.getElementById('gtrack');
+  const slides = track.children;
+  const total = slides.length;
+  let i = 0;
+  const count = document.getElementById('gcount');
+  const thumbs = [...document.querySelectorAll('#thumbs .thumb')];
+  const fmt = n => String(n+1).padStart(2,'0');
+  function go(n){
+    i = (n+total)%total;
+    track.style.transform = `translateX(-${i*100}%)`;
+    count.textContent = `${fmt(i)} / ${String(total).padStart(2,'0')}`;
+    thumbs.forEach((t,k)=>t.classList.toggle('active',k===i));
+    // ensure thumb visible
+    const tEl = thumbs[i]; if(tEl) tEl.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  }
+  document.querySelector('.gnav.prev').addEventListener('click',()=>go(i-1));
+  document.querySelector('.gnav.next').addEventListener('click',()=>go(i+1));
+  thumbs.forEach((t,k)=>t.addEventListener('click',()=>go(k)));
+
+  // touch swipe
+  let sx=0,dx=0,active=false;
+  track.parentElement.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;active=true;track.style.transition='none'},{passive:true});
+  track.parentElement.addEventListener('touchmove',e=>{
+    if(!active)return;
+    dx=e.touches[0].clientX-sx;
+    track.style.transform=`translateX(calc(-${i*100}% + ${dx}px))`;
+  },{passive:true});
+  track.parentElement.addEventListener('touchend',()=>{
+    track.style.transition='';
+    if(Math.abs(dx)>50) go(i + (dx<0?1:-1)); else go(i);
+    active=false;dx=0;
+  });
+
+  // Auto advance subtly
+  let timer=setInterval(()=>go(i+1),5500);
+  track.parentElement.addEventListener('mouseenter',()=>clearInterval(timer));
+})();
+
+/* Bundle calc removed — single-product layout */
+
+/* ============ Code copy ============ */
+document.getElementById('copybtn').addEventListener('click',function(){
+  const code='GET20';
+  if(navigator.clipboard) navigator.clipboard.writeText(code);
+  this.textContent='Copied ✓';
+  this.classList.add('copied');
+  setTimeout(()=>{this.textContent='Copy';this.classList.remove('copied')},1800);
+});
+
+/* CTA links direct to checkout URL */
+
+/* ============ Countdown ============ */
+(function(){
+  const end = Date.now() + (2*86400 + 14*3600 + 37*60 + 11)*1000;
+  const td=document.getElementById('td'),th=document.getElementById('th'),tm=document.getElementById('tm'),ts=document.getElementById('ts');
+  function tick(){
+    let s = Math.max(0, Math.floor((end-Date.now())/1000));
+    const d=Math.floor(s/86400);s%=86400;
+    const h=Math.floor(s/3600);s%=3600;
+    const m=Math.floor(s/60); s=s%60;
+    td.textContent=String(d).padStart(2,'0');
+    th.textContent=String(h).padStart(2,'0');
+    tm.textContent=String(m).padStart(2,'0');
+    ts.textContent=String(s).padStart(2,'0');
+  }
+  tick();setInterval(tick,1000);
+})();
+
+/* ============ Sticky bar (mobile) ============ */
+(function(){
+  const bar=document.getElementById('stickyBar');
+  const trigger=document.querySelector('.buybox');
+  function check(){
+    const r=trigger.getBoundingClientRect();
+    if(r.bottom<window.innerHeight*.4) bar.classList.add('show');
+    else bar.classList.remove('show');
+  }
+  window.addEventListener('scroll',check,{passive:true});
+  check();
+})();
+
+/* ============ Pack picker filter ============ */
+(function(){
+  const tabs=document.querySelectorAll('.ptab');
+  const cards=document.querySelectorAll('.pcard');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.classList.remove('on'));
+    t.classList.add('on');
+    const c=t.dataset.cat;
+    cards.forEach(card=>{
+      const show = c==='all' || card.dataset.cat===c;
+      card.style.display = show ? '' : 'none';
+    });
+  }));
+})();
+
+/* ============ Live order toast ============ */
+(function(){
+  const toast=document.getElementById('liveorder');
+  const name=document.getElementById('liveName');
+  const msg=document.getElementById('liveMsg');
+  const av=document.getElementById('liveav');
+  const orders=[
+    ['Anna in Berlin','just bought All 20 Liquid Glass Packs','A'],
+    ['Marcus in NYC','grabbed the bundle · 1 min ago','M'],
+    ['Sara in Toronto','grabbed all 20 packs · 1 min ago','S'],
+    ['Liam in London','just used code GET20 · saved $4','L'],
+    ['Yuki in Tokyo','bought the bundle · 4 min ago','Y'],
+    ['Noah in Sydney','just downloaded their packs','N'],
+    ['Olivia in Paris','grabbed the bundle + mega vault','O'],
+    ['Ethan in LA','just saved 67% on the bundle','E']
+  ];
+  let k=0;
+  function show(){
+    const o=orders[k%orders.length];
+    name.textContent=o[0];
+    msg.textContent=o[1];
+    av.textContent=o[2];
+    toast.classList.add('show');
+    setTimeout(()=>toast.classList.remove('show'),5000);
+    k++;
+  }
+  setTimeout(show,3500);
+  setInterval(show,12000);
+})();
+</script>
+</body>
+</html>
