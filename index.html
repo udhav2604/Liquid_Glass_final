@@ -5,6 +5,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>All 20 Liquid Glass Wallpaper Packs — iPhone Walls</title>
+<meta name="description" content="All 20 Liquid Glass wallpaper packs — 100+ premium 4K lock-screen wallpapers for iPhone & Android. One-time price, instant download.">
+<!-- Open Graph / link-share preview. NOTE: replace the absolute URL host below with your live domain so crawlers can fetch the image. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="All 20 Liquid Glass Wallpaper Packs">
+<meta property="og:description" content="100+ premium 4K liquid-glass lock screens for iPhone & Android. One-time price — instant download.">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/assets/poster-drop.png">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="All 20 Liquid Glass Wallpaper Packs">
+<meta name="twitter:description" content="100+ premium 4K liquid-glass lock screens for iPhone & Android. One-time price — instant download.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/assets/poster-drop.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd1e3'/%3E%3Cstop offset='0.35' stop-color='%23c9b6ff'/%3E%3Cstop offset='0.7' stop-color='%239be4ff'/%3E%3Cstop offset='1' stop-color='%23ffe7b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2308080a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='url(%23g)'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,15 +78,16 @@
   .hero{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-top:6px}
   @media(min-width:900px){.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;padding-top:24px;align-items:start}}
 
-  /* Carousel */
+  /* Live device preview */
   .gallery{position:relative;width:100%;min-width:0}
-  .gframe{position:relative;width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#0a0a0d;aspect-ratio:3/4}
-  @media(min-width:900px){.gframe{aspect-ratio:4/5}}
-  .gtrack{display:flex;width:100%;height:100%;transition:transform .55s cubic-bezier(.7,0,.15,1)}
-  .gslide{flex:0 0 100%;width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;background:#0a0a0d;overflow:hidden}
-  .gslide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-  .gslide.contain img{object-fit:contain;background:#0a0a0d}
-  .gslide.video-style{background:#000}
+  .stage{position:relative;display:flex;flex-direction:column;align-items:center;padding:8px 0 4px}
+  .stage-glow{position:absolute;top:46%;left:50%;width:78%;height:60%;transform:translate(-50%,-50%);border-radius:50%;filter:blur(60px);opacity:.55;z-index:0;background:radial-gradient(circle at 50% 50%,var(--glow,#7cc4ff),transparent 70%);transition:background .6s ease}
+  .screen{position:relative;z-index:1;width:min(300px,76vw);aspect-ratio:1200/1600;border-radius:30px;overflow:hidden;background:#0a0a0c;box-shadow:0 30px 80px -22px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.06)}
+  @media(min-width:900px){.screen{width:min(320px,44vw)}}
+  .wall{position:absolute;inset:0;width:100%;height:100%;object-fit:var(--fit,cover);object-position:var(--pos,center);transform:scale(var(--s,1));opacity:0;transition:opacity .55s ease}
+  .wall.on{opacity:1}
+  .hint{margin-top:14px;font-size:12px;letter-spacing:.04em;color:var(--ink-3);display:flex;align-items:center;gap:7px;justify-content:center}
+  .hint::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
   .gtag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:7px 11px;border-radius:99px;display:flex;align-items:center;gap:8px}
   .gtag .pulse{width:6px;height:6px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 0 rgba(255,111,156,.6);animation:pulse 1.6s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,111,156,.7)}70%{box-shadow:0 0 0 10px rgba(255,111,156,0)}100%{box-shadow:0 0 0 0 rgba(255,111,156,0)}}
@@ -204,6 +217,11 @@
   .pcard:hover img{transform:scale(1.06)}
   .pcard .lbl{position:absolute;bottom:10px;left:10px;font-family:"Instrument Serif",serif;font-size:18px;letter-spacing:-.01em;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.6)}
   .pcard .num{position:absolute;top:10px;right:10px;font-family:"Geist Mono",monospace;font-size:10px;letter-spacing:.1em;color:#fff;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);padding:4px 8px;border-radius:99px}
+  .pcard.locked img{filter:brightness(.4) saturate(.7) blur(1px);transform:scale(1.05)}
+  .pcard.locked .veil{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;background:radial-gradient(ellipse at center,rgba(214,193,154,.12),rgba(0,0,0,.55));padding:14px}
+  .pcard.locked .veil .lk{font-size:20px}
+  .pcard.locked .veil .t2{font-family:"Instrument Serif",serif;font-size:17px;color:#fff;line-height:1.1}
+  .pcard.locked .veil .d2{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 
   /* === Reviews === */
   .reviews{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
@@ -225,6 +243,33 @@
   .rev p b{color:#fff;font-weight:500}
   .rev .v{font-size:10.5px;color:var(--emerald);letter-spacing:.1em;text-transform:uppercase;margin-top:10px;display:inline-flex;align-items:center;gap:6px}
   .rev .v::before{content:"✓"}
+  /* customer photo strip */
+  .review-photos{display:flex;gap:14px;margin-top:30px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .review-photos::-webkit-scrollbar{display:none}
+  .review-photos figure{margin:0;flex:0 0 auto;width:152px}
+  .review-photos img{width:152px;height:202px;object-fit:cover;border-radius:18px;border:1px solid var(--line-2);display:block;box-shadow:0 18px 44px -22px rgba(0,0,0,.8)}
+  .review-photos figcaption{margin-top:9px;display:flex;align-items:center;gap:6px;font-size:11px;color:var(--ink-3)}
+  .review-photos figcaption .rp-stars{color:var(--gold);letter-spacing:.5px;font-size:10px}
+  .review-photos figcaption b{color:#fff;font-weight:500}
+  @media(min-width:760px){.review-photos{justify-content:center;flex-wrap:nowrap}}
+
+  /* === Before / After slider === */
+  .ba-wrap{margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:18px}
+  .ba{position:relative;width:min(330px,82vw);aspect-ratio:3/4;border-radius:30px;overflow:hidden;border:1px solid var(--line-2);box-shadow:0 30px 70px -20px rgba(0,0,0,.8);user-select:none;touch-action:pan-y;background:#000}
+  .ba-layer{position:absolute;inset:0;width:100%;height:100%}
+  .ba-after img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.16)}
+  /* default/boring iOS lock screen, built in CSS */
+  .ba-before{background:linear-gradient(165deg,#5b6b86,#41506b 45%,#2b3346);display:flex;flex-direction:column;align-items:center;color:rgba(255,255,255,.92)}
+  .ba-before .bdate{margin-top:16%;font-size:13px;letter-spacing:.02em;color:rgba(255,255,255,.8)}
+  .ba-before .btime{font-weight:300;font-size:74px;line-height:.9;letter-spacing:-2px;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
+  .ba-before .bdots{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:30%;height:18px;background:#000;border-radius:99px}
+  .ba-before .block{position:absolute;top:48px;font-size:15px;opacity:.8}
+  .ba-before .bbar{position:absolute;bottom:18px;width:38%;height:5px;border-radius:99px;background:rgba(255,255,255,.7)}
+  .ba-clip{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--split,50%)) 0 0)}
+  .ba-handle{position:absolute;top:0;bottom:0;left:var(--split,50%);width:2px;background:rgba(255,255,255,.9);transform:translateX(-1px);z-index:5;box-shadow:0 0 14px rgba(0,0,0,.5)}
+  .ba-knob{position:absolute;top:50%;left:var(--split,50%);transform:translate(-50%,-50%);z-index:6;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;color:#111;box-shadow:0 6px 20px rgba(0,0,0,.5);cursor:ew-resize}
+  .ba-tag{position:absolute;top:14px;z-index:7;font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:6px 10px;border-radius:99px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);color:#fff;pointer-events:none}
+  .ba-tag.l{left:14px}.ba-tag.r{right:14px;background:rgba(214,193,154,.85);color:#000;border-color:transparent}
 
   /* === HIW === */
   .hiw{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px;counter-reset:s}
@@ -292,6 +337,34 @@
   /* Small util */
   .hide-mobile{display:none}
   @media(min-width:900px){.hide-mobile{display:initial}.hide-desktop{display:none}}
+
+  /* Guarantee row */
+  .guarantee{display:flex;align-items:center;gap:12px;border:1px solid rgba(95,209,161,.2);border-radius:12px;padding:12px 14px;background:rgba(95,209,161,.04);font-size:13px;color:var(--ink-2)}
+  .guarantee .gi{font-size:22px;flex-shrink:0}
+  .guarantee b{color:#fff;font-weight:500}
+
+  /* Sticky bar — show on all screens */
+  @media(min-width:900px){.sticky-bar{display:flex}}
+
+  /* Exit popup */
+  #ep{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+  #ep.show{display:flex}
+  .ep-bg{position:absolute;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .ep-card{position:relative;z-index:1;background:#0e0e12;border:1px solid var(--line-2);border-radius:24px;padding:clamp(28px,5vw,44px);max-width:440px;width:100%;text-align:center;box-shadow:0 0 0 1px rgba(255,255,255,.04),0 40px 100px rgba(0,0,0,.9)}
+  .ep-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ffd1e3,#c9b6ff,#9be4ff);border-radius:24px 24px 0 0}
+  .ep-close{position:absolute;top:12px;right:14px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink-3);cursor:pointer;transition:background .2s}
+  .ep-close:hover{background:rgba(255,255,255,.14);color:#fff}
+  .ep-card h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(24px,5vw,32px);letter-spacing:-.02em;margin:14px 0 8px}
+  .ep-card h3 em{font-style:italic;color:var(--gold)}
+  .ep-card p{color:var(--ink-2);font-size:14px;line-height:1.6;margin:0 0 20px}
+  .ep-price{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:20px}
+  .ep-price .now{font-family:"Instrument Serif",serif;font-size:52px;line-height:1;letter-spacing:-.02em}
+  .ep-price .was{font-size:18px;color:var(--ink-3);text-decoration:line-through}
+  .ep-price .badge{background:var(--gold);color:#000;font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:6px}
+  .ep-cta{display:flex;align-items:center;justify-content:center;gap:8px;padding:17px;border-radius:13px;background:linear-gradient(180deg,#fafafa,#dcd6cb);color:#0a0a0d;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;width:100%;text-decoration:none;transition:transform .15s;margin-bottom:10px}
+  .ep-cta:hover{transform:translateY(-1px)}
+  .ep-dismiss{background:none;border:none;color:var(--ink-3);font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;letter-spacing:.06em}
+  .ep-dismiss:hover{color:#fff}
 </style>
 </head>
 <body>
@@ -315,14 +388,14 @@
 <!-- Promo -->
 <div class="promo">
   <div class="promo-track" aria-hidden="true">
-    <span><i class="dot"></i> use code <b>GET20</b> for 20% off — May 1–7 only</span>
+    <span><i class="dot"></i> use code <b>GET20</b> for an extra 20% off — launch pricing</span>
     <span><i class="dot"></i> Instant download</span>
-    <span><i class="dot"></i> 290+ packs sold this week</span>
+    <span><i class="dot"></i> 290+ sold this week</span>
     <span><i class="dot"></i> works on iPhone &amp; Android</span>
     <span><i class="dot"></i> 4K resolution</span>
-    <span><i class="dot"></i> use code <b>GET20</b> for 20% off — May 1–7 only</span>
+    <span><i class="dot"></i> use code <b>GET20</b> for an extra 20% off — launch pricing</span>
     <span><i class="dot"></i> Instant download</span>
-    <span><i class="dot"></i> 290+ packs sold this week</span>
+    <span><i class="dot"></i> 290+ sold this week</span>
     <span><i class="dot"></i> works on iPhone &amp; Android</span>
     <span><i class="dot"></i> 4K resolution</span>
   </div>
@@ -348,48 +421,44 @@
   <section class="hero" style="padding-top:0">
     <!-- Gallery -->
     <div class="gallery">
-      <div class="gframe">
-        <div class="gtag"><span class="pulse"></span> Live preview · 4K</div>
-        <div class="gtrack" id="gtrack">
-          <div class="gslide contain"><img src="assets/hero-main.png" alt="All Liquid Glass Wallpapers — cover"></div>
-          <div class="gslide"><img src="assets/hero-blue-red.webp" alt="Liquid glass wallpaper — blue & red gradient"></div>
-          <div class="gslide"><img src="assets/hero-liquid-blue.webp" alt="Liquid glass wallpaper — azure swirl"></div>
-          <div class="gslide"><img src="assets/pack-pink-1.jpg" alt="Magenta Flow wallpaper"></div>
-          <div class="gslide"><img src="assets/pack-rose-1.jpg" alt=""></div>
-          <div class="gslide"><img src="assets/pack-iris-1.jpg" alt=""></div>
-          <div class="gslide"><img src="assets/pack-gem-blue.jpg" alt=""></div>
-          <div class="gslide"><img src="assets/pack-iris-3.jpg" alt=""></div>
-          <div class="gslide"><img src="assets/pack-gem-pink.jpg" alt=""></div>
-          <div class="gslide"><img src="assets/pack-gem-green.jpg" alt=""></div>
+      <div class="stage" id="stage">
+        <div class="stage-glow" id="stageGlow"></div>
+        <div class="screen" id="screen">
+          <div class="gtag"><span class="pulse"></span> Live preview · 4K</div>
+          <img class="wall on" id="wallA" src="assets/poster-grid.png" alt="Liquid Glass wallpaper collection preview" fetchpriority="high">
+          <img class="wall" id="wallB" alt="">
         </div>
-        <button class="gnav prev" aria-label="Previous">
+        <button class="gnav prev" aria-label="Previous wallpaper">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
-        <button class="gnav next" aria-label="Next">
+        <button class="gnav next" aria-label="Next wallpaper">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
         </button>
-        <div class="gcount" id="gcount">01 / 10</div>
+        <div class="gcount" id="gcount">01 / 11</div>
       </div>
+      <div class="hint">Tap any wallpaper to preview it live</div>
       <div class="thumbs" id="thumbs">
-        <button class="thumb active" data-i="0"><img src="assets/hero-main.png" alt=""></button>
-        <button class="thumb" data-i="1"><img src="assets/hero-blue-red.webp" alt=""></button>
-        <button class="thumb" data-i="2"><img src="assets/hero-liquid-blue.webp" alt=""></button>
-        <button class="thumb" data-i="3"><img src="assets/pack-pink-1.jpg" alt=""></button>
-        <button class="thumb" data-i="4"><img src="assets/pack-rose-1.jpg" alt=""></button>
-        <button class="thumb" data-i="5"><img src="assets/pack-iris-1.jpg" alt=""></button>
-        <button class="thumb" data-i="6"><img src="assets/pack-gem-blue.jpg" alt=""></button>
-        <button class="thumb" data-i="7"><img src="assets/pack-iris-3.jpg" alt=""></button>
-        <button class="thumb" data-i="8"><img src="assets/pack-gem-pink.jpg" alt=""></button>
-        <button class="thumb" data-i="9"><img src="assets/pack-gem-green.jpg" alt=""></button>
+        <button class="thumb active" data-i="0" data-glow="#b8a0ff" data-s="1" data-pos="center" data-fit="contain"><img src="assets/poster-grid.png" alt="Liquid Glass collection — 10 colorways" loading="eager"></button>
+        <button class="thumb" data-i="1" data-glow="#a9c6ff" data-s="1.16" data-pos="center 50%"><img src="assets/hero-blue-red.webp" alt="Crimson Tide" loading="eager"></button>
+        <button class="thumb" data-i="1" data-glow="#7cc4ff" data-s="1.16" data-pos="center 50%"><img src="assets/hero-liquid-blue.webp" alt="Azure Swirl" loading="eager"></button>
+        <button class="thumb" data-i="2" data-glow="#ff7fae" data-s="1" data-pos="center 50%"><img src="assets/pack-pink-1.jpg" alt="Magenta Flow" loading="lazy"></button>
+        <button class="thumb" data-i="3" data-glow="#e7b9a8" data-s="1" data-pos="center 50%"><img src="assets/pack-rose-1.jpg" alt="Rose Quartz" loading="lazy"></button>
+        <button class="thumb" data-i="4" data-glow="#d8c7ff" data-s="1" data-pos="center 50%"><img src="assets/pack-iris-1.jpg" alt="Pearl Drop" loading="lazy"></button>
+        <button class="thumb" data-i="5" data-glow="#6fa8ff" data-s="1" data-pos="center 50%"><img src="assets/pack-gem-blue.jpg" alt="Sapphire Cut" loading="lazy"></button>
+        <button class="thumb" data-i="6" data-glow="#9be4ff" data-s="1" data-pos="center 50%"><img src="assets/pack-iris-3.jpg" alt="Aurora" loading="lazy"></button>
+        <button class="thumb" data-i="7" data-glow="#ff8fc8" data-s="1" data-pos="center 50%"><img src="assets/pack-gem-pink.jpg" alt="Pink Diamond" loading="lazy"></button>
+        <button class="thumb" data-i="8" data-glow="#5fd1a1" data-s="1" data-pos="center 50%"><img src="assets/pack-gem-green.jpg" alt="Emerald Cut" loading="lazy"></button>
+        <button class="thumb" data-i="9" data-glow="#ff7a3c" data-s="1" data-pos="center" data-fit="contain"><img src="assets/poster-neon.png" alt="All Liquid Glass wallpapers" loading="lazy"></button>
       </div>
     </div>
 
     <!-- Buybox -->
     <div class="buybox">
       <div class="badges">
-        <span class="live">Live · 38 viewing</span>
+        <span class="live">Live · <span id="viewcount">38</span> viewing</span>
         <span>★ 4.9 / 5 · 2,140 reviews</span>
-        <span>Best seller</span>
+        <span>🔥 Best seller</span>
+        <span style="color:#ff9555;border-color:rgba(255,149,85,.3)">⚡ Launch pricing — ends soon</span>
       </div>
 
       <h1>All 20 Liquid Glass<br><em>Wallpaper Packs</em></h1>
@@ -418,10 +487,10 @@
 
       <!-- Stock urgency -->
       <div class="stock">
-        <div class="stock-head"><span>Limited launch — only <b>3 bundles left</b> at this price</span><b>82% claimed</b></div>
+        <div class="stock-head"><span>🔥 <b>Launch pricing</b> — selling fast this week</span><b>290+ sold</b></div>
         <div class="stock-bar"><i style="width:82%"></i></div>
         <div class="timer">
-          <span style="color:var(--ink-2);font-family:Geist,sans-serif;font-size:12px;letter-spacing:.08em">Sale ends in</span>
+          <span style="color:var(--ink-2);font-family:Geist,sans-serif;font-size:12px;letter-spacing:.08em">Launch price ends in</span>
           <div style="display:flex;gap:6px">
             <b id="td">02</b><b id="th">14</b><b id="tm">37</b><b id="ts">11</b>
           </div>
@@ -434,7 +503,7 @@
           <div class="check">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
           </div>
-          <div class="bundle-thumb"><img src="assets/hero-main.png" alt=""></div>
+          <div class="bundle-thumb"><img src="assets/hero-blue-red.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="bundle-info">
             <div class="t">All 20 Liquid Glass Wallpaper Packs</div>
             <div class="d">100+ wallpapers · 4K · iPhone &amp; Android</div>
@@ -454,7 +523,7 @@
       </div>
 
       <!-- CTA -->
-      <a class="cta" id="cta" href="https://technouniverse.bio/shop/a5fe5a71-69ab-471c-8008-4bc316a33bbf" target="_blank" rel="noopener">
+      <a class="cta" id="cta" href="https://stb1tb-g5.myshopify.com/checkouts/cn/hWNCjcRSz6yLtuahkcYHoscr/en-ca?_r=AQABhRTgn_0NBIpdIvlyvCVwVZn3lyxrGLn9dSyGn7SQukk" target="_blank" rel="noopener">
         Get the bundle — $9.99
         <span class="cta-arrow">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -466,6 +535,11 @@
         <div class="pay-icons">
           <span>VISA</span><span>MC</span><span>AMEX</span><span>APPLE</span><span>PAYPAL</span>
         </div>
+      </div>
+
+      <div class="guarantee">
+        <span class="gi">🛡️</span>
+        <div><b>Satisfaction promise</b> — If your files are missing or broken, we fix it same day. Every time.</div>
       </div>
 
       <div class="trust">
@@ -492,25 +566,24 @@
         <button class="ptab" data-cat="pink">Pink Wave</button>
       </div>
       <div class="pack-grid" id="pgrid">
-        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-1.jpg" alt=""><div class="num">01</div><div class="lbl">Rose Quartz</div></div>
-        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-1.jpg" alt=""><div class="num">02</div><div class="lbl">Pearl Drop</div></div>
-        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-blue.jpg" alt=""><div class="num">03</div><div class="lbl">Sapphire Cut</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-1.jpg" alt=""><div class="num">04</div><div class="lbl">Magenta Flow</div></div>
-        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-3.jpg" alt=""><div class="num">05</div><div class="lbl">Aurora</div></div>
-        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-green.jpg" alt=""><div class="num">06</div><div class="lbl">Emerald Cut</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-3.jpg" alt=""><div class="num">07</div><div class="lbl">Onyx Liquid</div></div>
-        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-2.jpg" alt=""><div class="num">08</div><div class="lbl">Velvet Rose</div></div>
-        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-2.jpg" alt=""><div class="num">09</div><div class="lbl">Mother of Pearl</div></div>
-        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-purple.jpg" alt=""><div class="num">10</div><div class="lbl">Amethyst</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-5.jpg" alt=""><div class="num">11</div><div class="lbl">Mirror Wave</div></div>
-        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-pink.jpg" alt=""><div class="num">12</div><div class="lbl">Pink Diamond</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-7.jpg" alt=""><div class="num">13</div><div class="lbl">Liquid Mercury</div></div>
-        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-3.jpg" alt=""><div class="num">14</div><div class="lbl">Ruby Mist</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-8.jpg" alt=""><div class="num">15</div><div class="lbl">Obsidian Glow</div></div>
-        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-2.jpg" alt=""><div class="num">16</div><div class="lbl">Magenta Storm</div></div>
-        <div class="pcard" data-cat="iris"><img src="assets/hero-blue-red.webp" alt=""><div class="num">17</div><div class="lbl">Crimson Tide</div></div>
-        <div class="pcard" data-cat="iris"><img src="assets/hero-liquid-blue.webp" alt=""><div class="num">18</div><div class="lbl">Azure Swirl</div></div>
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-1.jpg" alt="Rose Quartz liquid glass wallpaper" loading="lazy" decoding="async"><div class="num">01</div><div class="lbl">Rose Quartz</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-1.jpg" alt="Pearl Drop iridescent wallpaper" loading="lazy" decoding="async"><div class="num">02</div><div class="lbl">Pearl Drop</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-blue.jpg" alt="Sapphire Cut gemstone wallpaper" loading="lazy" decoding="async"><div class="num">03</div><div class="lbl">Sapphire Cut</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-1.jpg" alt="Magenta Flow wallpaper" loading="lazy" decoding="async"><div class="num">04</div><div class="lbl">Magenta Flow</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-3.jpg" alt="Aurora iridescent wallpaper" loading="lazy" decoding="async"><div class="num">05</div><div class="lbl">Aurora</div></div>
+        <div class="pcard" data-cat="gem"><img src="assets/pack-gem-green.jpg" alt="Emerald Cut gemstone wallpaper" loading="lazy" decoding="async"><div class="num">06</div><div class="lbl">Emerald Cut</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-3.jpg" alt="Onyx Liquid wallpaper" loading="lazy" decoding="async"><div class="num">07</div><div class="lbl">Onyx Liquid</div></div>
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-2.jpg" alt="Velvet Rose wallpaper" loading="lazy" decoding="async"><div class="num">08</div><div class="lbl">Velvet Rose</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/pack-iris-2.jpg" alt="Mother of Pearl wallpaper" loading="lazy" decoding="async"><div class="num">09</div><div class="lbl">Mother of Pearl</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-5.jpg" alt="Mirror Wave wallpaper" loading="lazy" decoding="async"><div class="num">10</div><div class="lbl">Mirror Wave</div></div>
+        <div class="pcard" data-cat="rose"><img src="assets/pack-rose-3.jpg" alt="Ruby Mist wallpaper" loading="lazy" decoding="async"><div class="num">11</div><div class="lbl">Ruby Mist</div></div>
+        <div class="pcard" data-cat="pink"><img src="assets/pack-pink-8.jpg" alt="Obsidian Glow wallpaper" loading="lazy" decoding="async"><div class="num">12</div><div class="lbl">Obsidian Glow</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/hero-blue-red.webp" alt="Crimson Tide wallpaper" loading="lazy" decoding="async"><div class="num">13</div><div class="lbl">Crimson Tide</div></div>
+        <div class="pcard" data-cat="iris"><img src="assets/hero-liquid-blue.webp" alt="Azure Swirl wallpaper" loading="lazy" decoding="async"><div class="num">14</div><div class="lbl">Azure Swirl</div></div>
+        <div class="pcard locked" data-cat="iris"><img src="assets/pack-rose-2.jpg" alt="Unreleased drop" loading="lazy" decoding="async"><div class="num">15</div><div class="veil"><span class="lk">🔒</span><span class="t2">Unreleased Drop</span><span class="d2">Unlocks on purchase</span></div></div>
+        <div class="pcard locked" data-cat="gem"><img src="assets/pack-iris-2.jpg" alt="Unreleased drop" loading="lazy" decoding="async"><div class="num">16</div><div class="veil"><span class="lk">🔒</span><span class="t2">Unreleased Drop</span><span class="d2">Unlocks on purchase</span></div></div>
       </div>
+      <p class="lede" style="font-size:13px;margin-top:16px;color:var(--ink-3)">Showing all 20 packs — 18 available now + 2 unreleased drops that unlock the moment you buy.</p>
     </div>
 
     <!-- Stats strip -->
@@ -528,28 +601,61 @@
     <h2>Looks <em>insane</em> on every device.</h2>
     <div class="marquee">
       <div class="marquee-track">
-        <img src="assets/pack-rose-1.jpg" alt="">
-        <img src="assets/pack-iris-1.jpg" alt="">
-        <img src="assets/pack-pink-1.jpg" alt="">
-        <img src="assets/pack-gem-blue.jpg" alt="">
-        <img src="assets/pack-iris-3.jpg" alt="">
-        <img src="assets/pack-gem-pink.jpg" alt="">
-        <img src="assets/pack-pink-5.jpg" alt="">
-        <img src="assets/pack-rose-2.jpg" alt="">
-        <img src="assets/pack-gem-green.jpg" alt="">
-        <img src="assets/pack-pink-7.jpg" alt="">
+        <img src="assets/pack-rose-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-iris-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-blue.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-iris-3.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-pink.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-5.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-rose-2.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-green.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-7.jpg" alt="" loading="lazy" decoding="async">
         <!-- duplicated for loop -->
-        <img src="assets/pack-rose-1.jpg" alt="">
-        <img src="assets/pack-iris-1.jpg" alt="">
-        <img src="assets/pack-pink-1.jpg" alt="">
-        <img src="assets/pack-gem-blue.jpg" alt="">
-        <img src="assets/pack-iris-3.jpg" alt="">
-        <img src="assets/pack-gem-pink.jpg" alt="">
-        <img src="assets/pack-pink-5.jpg" alt="">
-        <img src="assets/pack-rose-2.jpg" alt="">
-        <img src="assets/pack-gem-green.jpg" alt="">
-        <img src="assets/pack-pink-7.jpg" alt="">
+        <img src="assets/pack-rose-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-iris-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-1.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-blue.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-iris-3.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-pink.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-5.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-rose-2.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-gem-green.jpg" alt="" loading="lazy" decoding="async">
+        <img src="assets/pack-pink-7.jpg" alt="" loading="lazy" decoding="async">
       </div>
+    </div>
+  </section>
+
+  <!-- Before / After -->
+  <section style="padding-top:60px">
+    <div class="eyebrow">Before · After</div>
+    <h2>The <em>same phone.</em> A different planet.</h2>
+    <p class="lede">Drag the slider. Left is the wallpaper everyone else is staring at. Right is yours.</p>
+    <div class="ba-wrap">
+      <div class="ba" id="ba">
+        <!-- AFTER (glass) — full layer underneath -->
+        <div class="ba-layer ba-after"><img src="assets/pack-rose-1.jpg" alt="Liquid glass wallpaper" loading="lazy" decoding="async"></div>
+        <!-- BEFORE (default) — clipped on top, revealed on the left -->
+        <div class="ba-clip" id="baClip">
+          <div class="ba-layer ba-before">
+            <div class="bdots"></div>
+            <div class="block">🔒</div>
+            <div class="bdate">Tuesday, May 20</div>
+            <div class="btime">9:41</div>
+            <div class="bbar"></div>
+          </div>
+        </div>
+        <span class="ba-tag l">Default</span>
+        <span class="ba-tag r">Liquid Glass</span>
+        <div class="ba-handle" id="baHandle"></div>
+        <div class="ba-knob" id="baKnob" role="slider" aria-label="Compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+        </div>
+      </div>
+      <a class="cta" style="max-width:420px;width:100%" href="https://stb1tb-g5.myshopify.com/checkouts/cn/hWNCjcRSz6yLtuahkcYHoscr/en-ca?_r=AQABhRTgn_0NBIpdIvlyvCVwVZn3lyxrGLn9dSyGn7SQukk" target="_blank" rel="noopener">
+        Upgrade my lock screen — $9.99
+        <span class="cta-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
     </div>
   </section>
 
@@ -579,6 +685,14 @@
     <h2>People keep <em>switching back</em>.</h2>
     <p class="lede">Real customers, real lock screens. Join 18,000+ buyers who upgraded their daily aesthetic.</p>
 
+    <div class="review-photos" aria-label="Customer photos">
+      <figure><img src="assets/review-1.png" alt="Customer photo — liquid glass wallpaper on iPhone" loading="lazy" decoding="async"><figcaption><span class="rp-stars">★★★★★</span> <b>Maya R.</b></figcaption></figure>
+      <figure><img src="assets/review-2.png" alt="Customer photo — orange liquid glass lock screen" loading="lazy" decoding="async"><figcaption><span class="rp-stars">★★★★★</span> <b>Aisha T.</b></figcaption></figure>
+      <figure><img src="assets/review-3.png" alt="Customer photo — liquid glass wallpaper in hand" loading="lazy" decoding="async"><figcaption><span class="rp-stars">★★★★★</span> <b>Diego M.</b></figcaption></figure>
+      <figure><img src="assets/review-4.png" alt="Customer photo — glass wallpaper lock screen" loading="lazy" decoding="async"><figcaption><span class="rp-stars">★★★★★</span> <b>Lena P.</b></figcaption></figure>
+      <figure><img src="assets/review-5.png" alt="Customer photo — liquid glass wallpaper on phone" loading="lazy" decoding="async"><figcaption><span class="rp-stars">★★★★★</span> <b>Sam V.</b></figcaption></figure>
+    </div>
+
     <div class="reviews">
       <div class="rev">
         <div class="top">
@@ -586,14 +700,6 @@
           <div class="stars-inline">★★★★★</div>
         </div>
         <p>"Honestly looks like <b>iOS 19 leaked early</b>. The rose pack is unreal — every notification looks like it's floating in glass."</p>
-        <div class="v">Verified buyer</div>
-      </div>
-      <div class="rev">
-        <div class="top">
-          <div class="who"><div class="av r2">J</div><div class="name">Jordan K.<span>Pixel 8 Pro</span></div></div>
-          <div class="stars-inline">★★★★★</div>
-        </div>
-        <p>"Bought this expecting <b>maybe 5 good ones</b>. Got 100+ that all slap. Best $9 I've spent on my phone in years."</p>
         <div class="v">Verified buyer</div>
       </div>
       <div class="rev">
@@ -610,22 +716,6 @@
           <div class="stars-inline">★★★★★</div>
         </div>
         <p>"The depth on the gem pack is wild. Looks like the screen has actual <b>thickness</b> to it. Such a clean upgrade."</p>
-        <div class="v">Verified buyer</div>
-      </div>
-      <div class="rev">
-        <div class="top">
-          <div class="who"><div class="av r5">L</div><div class="name">Lena P.<span>iPhone 13 Mini</span></div></div>
-          <div class="stars-inline">★★★★★</div>
-        </div>
-        <p>"I was skeptical at $9.99 for so many. Downloaded in 10 seconds, set up in another 30. <b>Phone feels brand new</b>."</p>
-        <div class="v">Verified buyer</div>
-      </div>
-      <div class="rev">
-        <div class="top">
-          <div class="who"><div class="av r6">S</div><div class="name">Sam V.<span>Galaxy S24</span></div></div>
-          <div class="stars-inline">★★★★★</div>
-        </div>
-        <p>"Works perfectly on Android — fits the punch hole, AOD looks sick. <b>Don't sleep on the iridescent pack</b>."</p>
         <div class="v">Verified buyer</div>
       </div>
     </div>
@@ -676,12 +766,12 @@
         <p>Yes. Every wallpaper is exported in 9:16 at 4K, which fits every iPhone (12 through 16 Pro Max), iPad, and Android device including Pixel and Galaxy. We've optimized for Dynamic Island, notches and punch-hole cameras.</p>
       </details>
       <details class="faq">
-        <summary>What's the difference between this and the 19,000 mega vault?</summary>
-        <p>This bundle is a curated 20-pack of our best liquid glass and gemstone designs (100+ wallpapers). The mega vault is our entire library — every aesthetic, every category. The order bump above lets you add it for $4.29 instead of $5.29 — a one-time offer at checkout.</p>
+        <summary>How many wallpapers do I actually get?</summary>
+        <p>20 themed packs in total — 18 curated liquid glass &amp; gemstone designs available now, plus 2 unreleased drops that unlock the moment you buy. That's 100+ individual 4K wallpapers, all included in this one bundle.</p>
       </details>
       <details class="faq">
         <summary>Is the GET20 code stackable with the bundle?</summary>
-        <p>Yes — apply <span class="mono" style="color:var(--gold)">GET20</span> at checkout to take an additional 20% off the already-discounted bundle price. Valid May 1–7 only.</p>
+        <p>Yes — apply <span class="mono" style="color:var(--gold)">GET20</span> at checkout to take an additional 20% off the already-discounted bundle price. Valid during the launch window only.</p>
       </details>
       <details class="faq">
         <summary>Can I share these with friends?</summary>
@@ -697,6 +787,9 @@
   <!-- Final CTA -->
   <section style="padding-top:80px">
     <div style="border:1px solid var(--line);border-radius:24px;padding:48px 24px;text-align:center;background:radial-gradient(ellipse at top,rgba(214,193,154,.12),transparent 70%)">
+      <div style="margin:0 auto 28px;max-width:360px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 70px -20px rgba(0,0,0,.7)">
+        <img src="assets/poster-drop.png" alt="Liquid Glass Wallpaper Pack — new drop" style="width:100%;display:block" loading="lazy" decoding="async">
+      </div>
       <div class="eyebrow" style="justify-content:center">★★★★★ · trusted by 18,000+</div>
       <h2 style="margin:0 auto;max-width:18ch">Make your phone feel <em>expensive</em>.</h2>
       <p class="lede" style="margin:14px auto 28px">All 20 packs. 100+ wallpapers. One time. Instant download.</p>
@@ -706,7 +799,7 @@
           <span class="price-was">$29.99</span>
           <span class="price-off">67% OFF</span>
         </div>
-        <a class="cta" style="max-width:380px;width:100%" href="https://technouniverse.bio/shop/a5fe5a71-69ab-471c-8008-4bc316a33bbf" target="_blank" rel="noopener">
+        <a class="cta" style="max-width:380px;width:100%" href="https://stb1tb-g5.myshopify.com/checkouts/cn/hWNCjcRSz6yLtuahkcYHoscr/en-ca?_r=AQABhRTgn_0NBIpdIvlyvCVwVZn3lyxrGLn9dSyGn7SQukk" target="_blank" rel="noopener">
           Get the bundle now
           <span class="cta-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
@@ -729,13 +822,34 @@
   </footer>
 </div>
 
+<!-- Exit popup -->
+<div id="ep">
+  <div class="ep-bg" id="ep-bg"></div>
+  <div class="ep-card">
+    <button class="ep-close" id="ep-close">✕</button>
+    <div style="font-size:40px">✨</div>
+    <h3>Before you go — <em>last chance</em></h3>
+    <p>Use code <strong style="color:#fff">GET20</strong> at checkout for an extra 20% off — that's <strong style="color:#fff">all 20 packs</strong> + 100+ 4K wallpapers for just <strong style="color:#fff">$7.99</strong>, less than a coffee.</p>
+    <div class="ep-price">
+      <span class="was">$29.99</span>
+      <span class="now">$7.99</span>
+      <span class="badge">CODE GET20</span>
+    </div>
+    <a class="ep-cta" href="https://stb1tb-g5.myshopify.com/checkouts/cn/hWNCjcRSz6yLtuahkcYHoscr/en-ca?_r=AQABhRTgn_0NBIpdIvlyvCVwVZn3lyxrGLn9dSyGn7SQukk" target="_blank" rel="noopener" id="ep-cta">
+      Claim My $7.99 Bundle
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="ep-dismiss" id="ep-dismiss">No thanks, I'll pay full price later</button>
+  </div>
+</div>
+
 <!-- Sticky bottom bar (mobile) -->
 <div class="sticky-bar" id="stickyBar">
   <div class="sp">
     <b>$9.99</b>
     <s>$29.99 · 67% off</s>
   </div>
-  <a class="scta" href="https://technouniverse.bio/shop/a5fe5a71-69ab-471c-8008-4bc316a33bbf" target="_blank" rel="noopener">
+  <a class="scta" href="https://stb1tb-g5.myshopify.com/checkouts/cn/hWNCjcRSz6yLtuahkcYHoscr/en-ca?_r=AQABhRTgn_0NBIpdIvlyvCVwVZn3lyxrGLn9dSyGn7SQukk" target="_blank" rel="noopener">
     Buy now
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
   </a>
@@ -751,49 +865,106 @@
 </div>
 
 <script>
-/* ============ Carousel ============ */
+/* ============ Live device preview ============ */
 (function(){
-  const track = document.getElementById('gtrack');
-  const slides = track.children;
-  const total = slides.length;
-  let i = 0;
-  const count = document.getElementById('gcount');
   const thumbs = [...document.querySelectorAll('#thumbs .thumb')];
+  const total = thumbs.length;
+  const srcs = thumbs.map(t => t.querySelector('img').getAttribute('src'));
+  const glows = thumbs.map(t => t.getAttribute('data-glow') || '#7cc4ff');
+  const scales = thumbs.map(t => t.getAttribute('data-s') || '1');
+  const poss = thumbs.map(t => t.getAttribute('data-pos') || 'center');
+  const fits = thumbs.map(t => t.getAttribute('data-fit') || 'cover');
+  const setFit = (el,n) => { el.style.setProperty('--s', scales[n]); el.style.setProperty('--pos', poss[n]); el.style.setProperty('--fit', fits[n]); };
+  const count = document.getElementById('gcount');
+  const glow = document.getElementById('stageGlow');
+  const stage = document.getElementById('stage');
+  let a = document.getElementById('wallA');
+  let b = document.getElementById('wallB');
+  let i = 0;
   const fmt = n => String(n+1).padStart(2,'0');
+
   function go(n){
-    i = (n+total)%total;
-    track.style.transform = `translateX(-${i*100}%)`;
-    count.textContent = `${fmt(i)} / ${String(total).padStart(2,'0')}`;
-    thumbs.forEach((t,k)=>t.classList.toggle('active',k===i));
-    // ensure thumb visible (scroll only inside the thumbs strip, NOT the page)
-    const tEl = thumbs[i];
+    n = (n+total)%total;
+    if(n === i && a.getAttribute('src') === srcs[n]) { return paint(n); }
+    i = n;
+    const back = a.classList.contains('on') ? b : a;
+    const front = a.classList.contains('on') ? a : b;
+    const swap = () => { back.classList.add('on'); front.classList.remove('on'); };
+    setFit(back, n);
+    back.src = srcs[n];
+    if(back.complete) swap(); else back.onload = swap;
+    paint(n);
+  }
+  function paint(n){
+    count.textContent = `${fmt(n)} / ${String(total).padStart(2,'0')}`;
+    glow.style.setProperty('--glow', glows[n]);
+    thumbs.forEach((t,k)=>t.classList.toggle('active',k===n));
+    const tEl = thumbs[n];
     if(tEl){
       const strip = tEl.parentElement;
       const target = tEl.offsetLeft - (strip.clientWidth/2) + (tEl.clientWidth/2);
       strip.scrollTo({left: Math.max(0,target), behavior:'smooth'});
     }
   }
+  // initial glow + fit
+  glow.style.setProperty('--glow', glows[0]);
+  setFit(a, 0);
+
   document.querySelector('.gnav.prev').addEventListener('click',()=>go(i-1));
   document.querySelector('.gnav.next').addEventListener('click',()=>go(i+1));
   thumbs.forEach((t,k)=>t.addEventListener('click',()=>go(k)));
 
-  // touch swipe
-  let sx=0,dx=0,active=false;
-  track.parentElement.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;active=true;track.style.transition='none'},{passive:true});
-  track.parentElement.addEventListener('touchmove',e=>{
-    if(!active)return;
-    dx=e.touches[0].clientX-sx;
-    track.style.transform=`translateX(calc(-${i*100}% + ${dx}px))`;
-  },{passive:true});
-  track.parentElement.addEventListener('touchend',()=>{
-    track.style.transition='';
-    if(Math.abs(dx)>50) go(i + (dx<0?1:-1)); else go(i);
-    active=false;dx=0;
-  });
+  let sx=0,dx=0,activeT=false;
+  stage.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;activeT=true},{passive:true});
+  stage.addEventListener('touchmove',e=>{ if(activeT) dx=e.touches[0].clientX-sx; },{passive:true});
+  stage.addEventListener('touchend',()=>{ if(Math.abs(dx)>40) go(i + (dx<0?1:-1)); activeT=false;dx=0; });
 
-  // Auto advance subtly
-  let timer=setInterval(()=>go(i+1),5500);
-  track.parentElement.addEventListener('mouseenter',()=>clearInterval(timer));
+  let timer=setInterval(()=>go(i+1),5000);
+  stage.addEventListener('mouseenter',()=>clearInterval(timer));
+})();
+
+/* ============ Live viewer count ============ */
+(function(){
+  const el = document.getElementById('viewcount');
+  if(!el) return;
+  let v = 34 + Math.floor(Math.random()*20);
+  function flicker(){
+    v = Math.max(22, Math.min(79, v + (Math.random()<.55?1:-1) * (Math.floor(Math.random()*3)+1)));
+    el.textContent = v;
+    setTimeout(flicker, 5000 + Math.random()*9000);
+  }
+  flicker();
+})();
+
+/* ============ Exit-intent popup ============ */
+(function(){
+  const popup = document.getElementById('ep');
+  if(!popup) return;
+  let fired = false;
+  function open(){
+    if(fired || sessionStorage.getItem('ep_done')) return;
+    fired = true; sessionStorage.setItem('ep_done','1');
+    popup.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    popup.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+  // 1) Exit intent — cursor leaves toward the top (desktop)
+  document.addEventListener('mouseleave', e => { if(e.clientY < 8) open(); });
+  // 2) Scroll trigger — fires once when the viewer reaches the "Glass, frozen in motion" gallery section
+  const trigger = document.getElementById('gallery');
+  if(trigger && 'IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{ if(en.isIntersecting){ open(); io.disconnect(); } });
+    }, {threshold:0, rootMargin:'0px 0px -20% 0px'});
+    io.observe(trigger);
+  }
+  document.getElementById('ep-close').addEventListener('click', close);
+  document.getElementById('ep-dismiss').addEventListener('click', close);
+  document.getElementById('ep-bg').addEventListener('click', close);
+  document.getElementById('ep-cta').addEventListener('click', close);
 })();
 
 /* Bundle calc removed — single-product layout */
@@ -811,9 +982,13 @@ document.getElementById('copybtn').addEventListener('click',function(){
 
 /* ============ Countdown ============ */
 (function(){
-  const end = Date.now() + (2*86400 + 14*3600 + 37*60 + 11)*1000;
+  // Evergreen per-visitor launch window: persists across reloads, resets when it expires.
+  const DUR = (1*86400 + 8*3600 + 42*60)*1000;
+  let end = parseInt(localStorage.getItem('lp_end'),10);
+  if(!end || isNaN(end) || end < Date.now()){ end = Date.now() + DUR; localStorage.setItem('lp_end', end); }
   const td=document.getElementById('td'),th=document.getElementById('th'),tm=document.getElementById('tm'),ts=document.getElementById('ts');
   function tick(){
+    if(end - Date.now() <= 0){ end = Date.now() + DUR; localStorage.setItem('lp_end', end); }
     let s = Math.max(0, Math.floor((end-Date.now())/1000));
     const d=Math.floor(s/86400);s%=86400;
     const h=Math.floor(s/3600);s%=3600;
@@ -852,6 +1027,49 @@ document.getElementById('copybtn').addEventListener('click',function(){
       card.style.display = show ? '' : 'none';
     });
   }));
+})();
+
+/* ============ Before / After slider ============ */
+(function(){
+  const ba=document.getElementById('ba');
+  if(!ba) return;
+  const clip=document.getElementById('baClip');
+  const handle=document.getElementById('baHandle');
+  const knob=document.getElementById('baKnob');
+  let dragging=false;
+  function setSplit(pct){
+    pct=Math.max(4,Math.min(96,pct));
+    const v=pct+'%';
+    clip.style.setProperty('--split',v);
+    handle.style.setProperty('--split',v);
+    knob.style.setProperty('--split',v);
+    knob.setAttribute('aria-valuenow',Math.round(pct));
+  }
+  function fromEvent(clientX){
+    const r=ba.getBoundingClientRect();
+    setSplit(((clientX-r.left)/r.width)*100);
+  }
+  ba.addEventListener('pointerdown',e=>{dragging=true;fromEvent(e.clientX);ba.setPointerCapture(e.pointerId);});
+  ba.addEventListener('pointermove',e=>{if(dragging)fromEvent(e.clientX);});
+  ba.addEventListener('pointerup',()=>dragging=false);
+  ba.addEventListener('pointercancel',()=>dragging=false);
+  knob.addEventListener('keydown',e=>{
+    const cur=parseInt(knob.getAttribute('aria-valuenow'),10)||50;
+    if(e.key==='ArrowLeft'){setSplit(cur-5);e.preventDefault();}
+    if(e.key==='ArrowRight'){setSplit(cur+5);e.preventDefault();}
+  });
+  // gentle auto-nudge once when scrolled into view, hinting it's draggable
+  let hinted=false;
+  const io=new IntersectionObserver(es=>{
+    es.forEach(en=>{
+      if(en.isIntersecting && !hinted){
+        hinted=true;
+        let p=50;const seq=[50,38,62,50];let k=0;
+        const t=setInterval(()=>{setSplit(seq[k++]);if(k>=seq.length)clearInterval(t);},420);
+      }
+    });
+  },{threshold:.5});
+  io.observe(ba);
 })();
 
 /* ============ Live order toast ============ */
